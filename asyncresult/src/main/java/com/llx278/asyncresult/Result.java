@@ -5,10 +5,10 @@ import android.content.Intent;
 import androidx.annotation.Nullable;
 
 public class Result {
-    public final int code;
+    public final int resultCode;
     public final Intent data;
-    Result(int code, @Nullable Intent data) {
-        this.code = code;
+    Result(int resultCode, @Nullable Intent data) {
+        this.resultCode = resultCode;
         this.data = data;
     }
 }

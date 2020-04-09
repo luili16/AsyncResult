@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this@MainActivity,SecondActivity::class.java)
             i.putExtra("input","bbbbbb")
             resut.startActivityForResult(this@MainActivity,i) {
-                Toast.makeText(this@MainActivity,"${it.code} : ${it.data.getStringExtra("param")}",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivity,"${it.resultCode} : ${it.data.getStringExtra("param")}",Toast.LENGTH_LONG).show()
             }
         }
     }

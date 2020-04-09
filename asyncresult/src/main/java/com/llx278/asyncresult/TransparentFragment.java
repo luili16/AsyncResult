@@ -31,7 +31,7 @@ public class TransparentFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == this.requestCode) {
-            callback.onActivityResult(new Result(requestCode,data));
+            callback.onActivityResult(new Result(resultCode,data));
         } else {
             callback.onActivityResult(new Result(Activity.RESULT_CANCELED,null));
         }
